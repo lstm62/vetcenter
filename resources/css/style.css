@@ -1,0 +1,121 @@
+body{
+	background-color:#b7de97;
+	background-image:url('../img/pattern.png');
+}
+.container{
+	padding:10px;background-color:#b7de97;
+	border-radius:10px;
+	margin-top:10px;
+	background:rgba(255,255,255,0.8);
+}
+
+header{
+	position:relative;
+	min-height:140px;
+}
+
+.logo{
+	z-index: 1355;
+	position:absolute;
+	background-color:#fff;
+	border:1px solid rgba(0,0,0,0.8);
+	border-radius:20px;
+	box-shadow:2px 2px 10px #666;
+}
+
+.nav-index, #slogan-text{
+position:absolute;
+width:100%;
+padding-left:150px;
+}
+
+@media(max-width:480px)
+{
+	.nav-index{padding-left:10px}
+	#slogan-text{padding-left:105px !important; font-size:16px !important;}
+	.logo{width:100px; top:21px}
+}
+
+#slogan-text{
+	border-radius:20px 5px 5px 20px;
+	top:18px;
+	height:42px;
+	line-height:42px;
+	padding-left:160px;
+	font-size:30px;
+	background-color:#abc;
+}
+
+.nav-index{
+height:52px;
+line-height:40px;
+border-radius:0 0 0 20px;
+top:60px;
+background: -moz-linear-gradient(top, rgba(169,219,128,1) 0%, rgba(150,197,111,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,219,128,1)), color-stop(100%,rgba(150,197,111,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* W3C */
+}
+
+#slider-index{
+	margin-top:110px;
+	height:300px;
+}
+
+.div-contenido{
+	width:100%;
+}
+
+.nav-tabs a
+{
+	font-weight:bolder;
+	color:#5b823c;
+}
+
+.nav-tabs .active a
+{
+	background-color:#caedad !important;
+}
+
+/*FORMULARIOS*/
+.btns{width:48%;}
+
+/*TABS SERVICIOS*/
+.nav-left{
+	border-radius:10px 0 0 10px;
+	background-color:#abc;
+	padding:10px;
+	display:inline-block; 
+	min-height:420px;
+}
+ul{margin:0; padding:0;}
+table tr:first-child{font-weight:bolder}
+table tr td:first-child{text-align:center; width:20px}
+.nav-left a{color:#000;}
+
+.tab-content-right{
+	border-radius:0 10px 10px 0;
+	display:inline-block; 
+	vertical-align:top;
+	background-color:#b7de97;
+	width:50%;
+	max-width:500px;
+	min-width:190px;
+	padding:10px;
+	min-height:420px;
+}
+
+.select-pet{
+	font-size:18px;
+	max-width:300px;
+	padding:5px;
+}
+
+.padding-pane{padding:10px;}
+
+.form-group label{display:block}/*para que el titulo de 'fecha de la si cita' ocupe todo el renglon*/
+
+nav .nav li a{font-size:20px; color:#000 !important; transition: all 0.2s;}
+nav .nav li a:hover{background-color:rgba(0,0,0,0.1) !important;}
