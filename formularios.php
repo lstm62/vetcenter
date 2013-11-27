@@ -140,7 +140,7 @@ $this->colocarTitulo("servicio",$operacion); ?>
     <div class="col-xs-9">
       <?php
         if($operacion!="agregar")
-          echo '<a href="mascotas.php" class="btn btn-danger pull-left btns">Cancelar</a>';
+          echo '<a href="servicios.php" class="btn btn-danger pull-left btns">Cancelar</a>';
       ?>
       <button type="submit" class="btn btn-success pull-right btns"><i class="fa fa-floppy-o"></i> Guardar</button>
     </div>
@@ -159,10 +159,11 @@ public function c()//c de clientes
     <!-- ROW QUE CONTIENE LOS DIAGNOSTICOS Y EL NOMBRE DE LA MASCOTA -->
     <br>
     <br>
-    <h3>Mascotas del cliente:</h3>
+    <h3 class="alert alert-info">Mascotas del cliente:</h3>
 
 <!-- LISTA DE MASCOTAS DEL CLIENTE -->
-<div class="nav-left">
+<div class="div-center">
+<div class="nav-left col-sm-4">
 <ul class="nav nav-pills nav-stacked">
   <li class='active'><a href="#pet1" data-toggle="tab"><i class="fa fa-github-alt"></i> Firulais</a></li>
   <li><a href="#pet2" data-toggle="tab"><i class="fa fa-github-alt"></i> Chirrungis</a></li>
@@ -171,7 +172,7 @@ public function c()//c de clientes
 </div>
 
 <!-- DETALLES DE LAS MASCOTAS -->
-<div class="tab-content tab-content-right">
+<div class="tab-content tab-content-right col-sm-8">
 
   <div class="tab-pane fade in active" id="pet1">
     <h2>Firulais</h2>
@@ -185,8 +186,8 @@ public function c()//c de clientes
     <p>7 servicios en total (2 vigentes)</p>
     <div class="col-sm-6">
       <ul>
-        <li class="label label-primary"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
       </ul>
     </div>
     <div class="col-sm-6">
@@ -212,10 +213,10 @@ public function c()//c de clientes
     <p>9 servicios en total (4 vigentes)</p>
     <div class="col-sm-6">
       <ul>
-        <li class="label label-primary"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Cirugía</b>Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Desparasitación</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Cirugía</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Desparasitación</b>Proxima cita: 15-12-2013</li>
       </ul>
     </div>
     <div class="col-sm-6">
@@ -242,7 +243,7 @@ public function c()//c de clientes
     <p>4 servicios en total (1 vigente)</p>
     <div class="col-sm-6">
       <ul>
-        <li class="label label-primary"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
       </ul>
     </div>
     <div class="col-sm-6">
@@ -255,6 +256,7 @@ public function c()//c de clientes
     
   </div>
 
+</div>
 </div>
 <?php
 }
@@ -274,10 +276,10 @@ public function det($mascota="") //genera los detalles de una mascota
     <p>9 servicios en total (4 vigentes)</p>
     <div class="col-sm-6">
       <ul>
-        <li class="label label-primary"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Cirugía</b>Proxima cita: 15-12-2013</li>
-        <li class="label label-primary"><b>Desparasitación</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><strong>Dentalstick</strong> Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Estética canina</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Cirugía</b>Proxima cita: 15-12-2013</li>
+        <li class="proxima-cita"><b>Desparasitación</b>Proxima cita: 15-12-2013</li>
       </ul>
     </div>
     <div class="col-sm-6">

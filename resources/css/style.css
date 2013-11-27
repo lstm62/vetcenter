@@ -87,12 +87,13 @@ background: linear-gradient(to bottom, rgba(169,219,128,1) 0%,rgba(150,197,111,1
 	border-radius:10px 0 0 10px;
 	background-color:#abc;
 	padding:10px;
-	display:inline-block; 
+	display:inline-block;
 	min-height:420px;
 }
 ul{margin:0; padding:0;}
 table tr:first-child{font-weight:bolder}
 table tr td:first-child{text-align:center; width:20px}
+table tr td:nth-child(2){font-weight:bolder;}
 .nav-left a{color:#000;}
 
 .tab-content-right{
@@ -100,7 +101,7 @@ table tr td:first-child{text-align:center; width:20px}
 	display:inline-block; 
 	vertical-align:top;
 	background-color:#b7de97;
-	width:50%;
+	
 	max-width:500px;
 	min-width:190px;
 	padding:10px;
@@ -119,3 +120,29 @@ table tr td:first-child{text-align:center; width:20px}
 
 nav .nav li a{font-size:20px; color:#000 !important; transition: all 0.2s;}
 nav .nav li a:hover{background-color:rgba(0,0,0,0.1) !important;}
+
+.div-center{/*div que encierra los dos div de detalles de mascotas*/
+	width:70%;
+	margin:auto;
+}
+
+.proxima-cita{}
+
+.lista-recordatorios li{
+list-style-type:none;
+padding:0px;
+margin:0px;
+border-radius:10px;
+height:40px;
+font-size:18px;
+margin-bottom:10px;
+padding:5px;
+background-color:rgba(0,0,0,0.2);
+}
+
+.lista-recordatorios li:hover{background-color:rgba(0,0,0,0.3);}
+
+@media(max-width:580px){
+	.nav-left{width:100%; height:auto;}
+	.tab-content-right(width:100%;)
+}

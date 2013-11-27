@@ -33,9 +33,10 @@
 	</div>
 </div>
 <br>
-
+<div class="row">
+<div class="div-center">
 <!-- LISTA DE SERVICIOS DISPONIBLES -->
-<div class="nav-left">
+<div class="nav-left col-sm-4">
 <ul class="nav nav-pills nav-stacked">
   <li class='active'><a href="#estetica" data-toggle="tab"><i class="glyphicon glyphicon-tag"></i> Estética canina</a></li>
   <li><a href="#reproduccion" data-toggle="tab"><i class="glyphicon glyphicon-tag"></i> Reproducción de caninos</a></li>
@@ -50,7 +51,7 @@
 </div>
 
 <!-- DETALLES DE LOS SERVICIOS -->
-<div class="tab-content tab-content-right">
+<div class="tab-content tab-content-right col-sm-8">
 
   <div class="tab-pane fade in active" id="estetica">
   	<h3>Estetica canina</h3>
@@ -144,4 +145,6 @@
 	</div>
 	<?php btn_guardar(); ?>
   </div>
+</div>
+</div>
 </div>
